@@ -11,6 +11,8 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/git-curriculum.css">
 	<!--End Style -->
+	<!-- Favicon -->
+	<link rel="icon" href="assets/ico/favicon.ico">
 </head>
 
 <body>
@@ -21,7 +23,6 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<center>
-					<!-- centralizar isso aqui -->
 					<a href="#" class="brand">Git Curriculum - Template</a>
 				</center>
 				</div>
@@ -48,7 +49,7 @@
 							<div class="span3">
 								<center>
 									<h3>Contact</h3>
-									<ul class="nav">
+									<ul type="none">
 										<li><a href="#"><i class="icon-twitter"></i> @name</a></li>
 										<li><a href="#"><i class="icon-envelope-alt"></i> name@mail.com</a></li>
 									</ul>
@@ -57,7 +58,7 @@
 							<div class="span3">
 								<center>
 									<h3>Social</h3>
-									<ul class="nav">
+									<ul type="none">
 										<li><a href="#"><i class="icon-google-plus"></i> Name Lname</a></li>
 										<li><a href="#"><i class="icon-facebook-sign"></i> Name Lname</a></li>
 									</ul>
@@ -66,7 +67,7 @@
 							<div class="span3">
 								<center>
 									<h3>Work</h3>
-									<ul class="nav">
+									<ul type="none">
 										<li><a href="#"><i class="icon-github"></i> @name</a></li>
 										<li><a href="#"><i class="icon-linkedin-sign"></i> Name Lname</a></li>
 									</ul>
@@ -185,28 +186,58 @@
 				
 				<!-- segunda linha de projetos -->
 				<div class="row-fluid">
-					<div class="well span4">
-						<div class="span6"><center><i class="icon-lemon icon-4x"></i></center></div>
-						<div class="span6">					
-							<h3>Projeto</h3>
-							<p class="muted"><strong>linguagem</strong></p>
-							<p>Description of the project</p>
+					<!-- Modelo -->
+					<div id="projeto" class="span4 well">
+						<div class="container-fluid">
+							<div class="span10">
+								<div class="row-fluid">
+									<div class="span9"><h4>Projeto<h4></div>
+									<div class="span3"><h4 class="muted">Linguagem<h4></div>
+								</div>
+								
+								<div class="well-small" id="note"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+							</div>
+							<div class="span2">
+								<br>
+								<br>
+								<button class="btn"><i class="icon-external-link-sign icon-2x"></i></button>
+								<button class="btn"><i class="icon-github icon-2x"></i></button>
+							</div>
+						</div>
+						<div id="tags" class="row-fluid">
+							<center>
+								<span class="label label-important">Linguagem</span>
+								<span class="label label-info">Metodologia</span>
+								<span class="label label-success">Ferramentas</span>
+								<span class="label">Notações</span>
+							</center>
 						</div>
 					</div>
-					<div class="well span4">
-						<div class="span6"><center><i class="icon-lemon icon-4x"></i></center></div>
-						<div class="span6">					
-							<h3>Projeto</h3>
-							<p class="muted"><strong>linguagem</strong></p>
-							<p>Description of the project</p>
+
+					<!-- Exemplo -->
+					<div id="projeto" class="span4 well">
+						<div class="container-fluid">
+							<div class="span10"> <!-- Informações -->
+								<div class="row-fluid">
+									<div class="span9"><h4>Sistema XPTO<h4></div> <!-- Nome -->
+									<div class="span3"><h4 class="muted">Ruby<h4></div> <!-- Linguagem / Quero alinhar isso na direita-->
+								</div>
+								<!-- Descrição -->
+								<div class="well-small" id="note"><p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+							</div>
+							<div class="span2"> <!-- Botões -->
+								<br>
+								<br>
+								<button class="btn"><i class="icon-external-link-sign icon-2x"></i></button>
+								<button class="btn"><i class="icon-github icon-2x"></i></button>
+							</div>
 						</div>
-					</div>
-					<div class="well span4">
-						<div class="span6"><center><i class="icon-lemon icon-4x"></i></center></div>
-						<div class="span6">					
-							<h3>Projeto</h3>
-							<p class="muted"><strong>linguagem</strong></p>
-							<p>Description of the project</p>
+						<div id="tags" class="row-fluid"> <!-- Tags -->
+							<center>
+								<span class="label label-important">Ruby on Rails</span>
+								<span class="label label-info">Heroku</span>
+								<span class="label label-success">Web</span>
+							</center>
 						</div>
 					</div>
 				</div>
@@ -215,12 +246,13 @@
 		<br />
 
 		<footer class="footer jumbotron">
-			Git Currriculum Theme by Tiago Pereira<br />
-			2013
-			<br/>
-
 			<!-- Creative Commons License -->
-			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />O trabalho <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Git Curriculum</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/runys" property="cc:attributionName" rel="cc:attributionURL">Tiago Pereira</a> foi licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt">Creative Commons - Atribuição  3.0 Não Adaptada</a>.<br />Com base no trabalho disponível em <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/runys/github-curriculum-template" rel="dct:source">https://github.com/runys/github-curriculum-template</a>.
+			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Git Curriculum</span> Project
+			<br>By <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/runys" property="cc:attributionName" rel="cc:attributionURL">Tiago Pereira</a>
+			<br>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt">Creative Commons - Atribuição  3.0 Não Adaptada</a>.<br />Avaiable at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/runys/github-curriculum-template" rel="dct:source">https://github.com/runys/github-curriculum-template</a>.
+			<br>
+			<br>
+			2013
 		</footer>
 	</div>
 
